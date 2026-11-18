@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj Digital LED</title>
+  <!-- Fuente estilo display de 7 segmentos -->
+  <link href="https://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="clock-container">
+    <div class="bezel">
+      <div class="screen" id="screen">
+        <div class="top-bar">
+          <span id="date-display">CARGANDO FECHA...</span>
+          <span id="ampm-display" class="ampm">24H</span>
+        </div>
+
+        <div class="time-wrapper">
+          <span id="hours">00</span>
+          <span class="colon" id="colon">:</span>
+          <span id="minutes">00</span>
+          <span class="seconds" id="seconds">00</span>
+        </div>
+
+        <div class="days-bar" id="days-bar">
+          <span data-day="1">LUN</span>
+          <span data-day="2">MAR</span>
+          <span data-day="3">MIÉ</span>
+          <span data-day="4">JUE</span>
+          <span data-day="5">VIE</span>
+          <span data-day="6">SÁB</span>
+          <span data-day="0">DOM</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="toggle-format" class="btn">12H / 24H</button>
+        <button id="change-color" class="btn">COLOR LED</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
